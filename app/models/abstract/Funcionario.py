@@ -1,7 +1,8 @@
+from ABC import ABC
 import os
 os.system("clear")
 
-class Funcionario:
+class Funcionario(ABC):
     def __init__(self, nome: str, telefone: str, email: str, endereco: Endereco) -> None:
         self.nome: str = nome
         self.telefone: str = telefone
